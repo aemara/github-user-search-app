@@ -1,0 +1,440 @@
+body {
+    background: #f6f8ff;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+/* Typography */
+h1 {
+    font-family: 'Space Mono', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: 'Space Mono', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: 'Space Mono', sans-serif;
+    font-size: 13px;
+    font-weight: 100;
+}
+
+p {
+    font-family: 'Space Mono', sans-serif;
+    font-size: 13px;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+.user-name {
+    color: #0079FF;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 820px) {}
+
+
+/* Layout */
+
+.container {
+    min-width: 327px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+header {
+    margin-top: 33px;
+    margin-bottom: 2.78rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.toggle-theme {
+    display: flex;
+    align-items: center;
+}
+
+.toggle-theme p {
+    text-transform: uppercase;
+    font-family: 'Space Mono', sans-serif;
+    font-size: 13px;
+    font-weight: 100;
+    letter-spacing: 2.5px;
+}
+
+.toggle-theme img {
+    margin-left: 16px;
+}
+
+.toggle-theme:hover {
+    cursor: pointer;
+}
+
+/* SEARCH BAR */
+
+form {
+    margin-bottom: 1.23rem;
+    background: #fefefe;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 16px;
+    padding-top: 6.5px;
+    padding-bottom: 6.5px;
+    padding-right: 7px;
+    border-radius: 15px;
+}
+
+
+form .search-icon {
+    margin-right: 9px;
+    width: 20px;
+}
+
+form input {
+    width: 100%;
+    margin-right: 7px;
+    border: none;
+    font-family: 'Space Mono', sans-serif;
+    font-size: 13px;
+    font-weight: 100;
+
+}
+
+.no-results {
+    font-family: "Space Mono", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #F74646;
+}
+
+
+.search-light {
+    color: #4B6A9B;
+}
+
+.search-dark {
+    background: #1E2A47;
+    color: #FFFFFF;
+}
+
+
+form input:focus {
+    outline: none;
+}
+
+form button {
+    width: 80px;
+    display: block;
+    background: #0079FF;
+    border: none;
+    border-radius: 10px;
+    padding-top: 12px;
+    /* Don't forget to change these paddings to rems */
+    padding-bottom: 12px;
+    padding-left: 18px;
+    padding-right: 14px;
+    font-family: 'Space Mono', sans-serif;
+    font-size: 13px;
+    font-weight: 100;
+    color: white;
+}
+
+form button:hover {
+    cursor: pointer;
+    background: #60ABFF;
+}
+
+
+
+
+
+/* MAIN SECTION */
+
+.user-info {
+    background: #fefefe;
+    color: #4B6A9B;
+    padding: 1.8rem;
+    border-radius: 15px;
+}
+
+.user-info-dark {
+    background: #1E2A47;
+    color: #FFFFFF;
+}
+
+.header-info {
+    display: flex;
+}
+
+.user-image {
+    border-radius: 40px;
+    width: 70px;
+    margin-right: 19px;
+    align-self: center;
+}
+
+@media screen and (min-width: 820px) {}
+
+.name-handle {
+    margin-bottom: 6px;
+}
+
+.name {
+    color: #2B3442;
+}
+
+.user-name {
+    color: #0079FF !important;
+}
+
+.date-join {
+    color: #697C9A;
+}
+
+.header-info {
+    margin-bottom: 2.53rem;
+}
+
+.bio {
+    margin-bottom: 1.8rem;
+    text-align: left;
+}
+
+
+/* Stats */
+
+.numbers {
+    border-radius: 10px;
+    padding: 1.38rem 1.07rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1.84rem;
+}
+
+.numbers p {
+    font-size: 11px;
+}
+
+
+.numbers-light {
+    background: #f6f8ff;
+}
+
+.numbers-dark {
+    background: #141D2F;
+    color: #ffffff;
+}
+
+.number {
+    text-align: center;
+}
+
+.numbers p {
+    text-transform: capitalize;
+}
+
+
+/* Extra Info*/
+.extra-info {
+    font-family: 'Space Mono', sans-serif;
+    font-size: 13px;
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.light-theme-link {
+    color: #4B6A9B;
+}
+
+.dark-theme-link {
+    color: #ffffff;
+}
+
+.extra-info-bit {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.23rem;
+}
+
+.location,
+.twitter {
+    margin-right: 65px;
+}
+
+.extra-info-bit img {
+    margin-right: 1rem;
+}
+
+.location img {
+    margin-right: 1.3rem;
+}
+
+.extra-info-link {
+    text-decoration: none;
+}
+
+.extra-info-link:hover {
+    text-decoration: underline;
+}
+
+
+.not-available {
+    opacity: 0.5;
+}
+
+
+/*********TABLET VERSION
+**************************/
+
+
+@media screen and (min-width: 820px) {
+    h2 {
+        font-size: 26px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    form input {
+        width: 60%;
+        margin-right: 140px;
+    }
+
+    .no-results {
+        width: 30%;
+        text-align: right;
+        padding-right: 10px;
+    }
+
+    .user-image {
+        width: 117px;
+        border-radius: 80px;
+    }
+
+    .name-date {
+        align-self: center;
+    }
+
+    .numbers p {
+        font-size: 13px;
+    }
+
+    .numbers h2 {
+        font-size: 22px;
+    }
+
+    .numbers {
+        padding-left: 32px;
+        justify-content: flex-start;
+    }
+
+    .number {
+        text-align: left;
+        margin-right: 90px;
+    }
+
+
+    .extra-info {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .twitter-company {
+        width: 50%;
+    }
+
+
+}
+
+
+@media screen and (min-width: 820px) and (max-width: 1200px) {
+
+
+    .container {
+        width: 70%;
+        max-width: 573px;
+    }
+
+
+}
+
+/*******DESKTOP VERSION
+*************************/
+
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 60%;
+        margin-bottom: 145px;
+        max-width: 730px;
+    }
+
+    .header-info {
+        margin-bottom: 0;
+    }
+
+    .name {
+        margin-bottom: 2px;
+    }
+
+    .name-date {
+        display: flex;
+        align-items: first-baseline;
+        justify-content: space-between;
+        align-self: flex-start;
+        width: 100%;
+    }
+
+    .name-handle {
+        margin-right: 138px;
+    }
+
+
+    .bio,
+    .numbers,
+    .extra-info {
+        margin-left: 135px;
+    }
+
+
+}
+
+
+/***********
+    Styles for Dark Theme
+    ************/
+
+.dark-background {
+    background: #141D2F;
+}
+
+.dark-h2 {
+    color: #2B3442;
+}
+
+.white-text {
+    color: #ffffff;
+}
